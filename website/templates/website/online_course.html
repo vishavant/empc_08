@@ -1,0 +1,203 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block page_content %}
+
+<!-- ========== Start Breadcumb ========== -->
+<div class="breadcrumb-nav">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Online Courses</li>
+            </ol>
+          </nav>
+    </div>
+</div>
+<!-- ========== End Breadcumb ========== -->
+
+<!-- ========== Start courses-section ========== -->
+<section class="courses-section section-padding">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="section-title text-center mb-4">
+                    <h2 class="title">our courses</h2>
+                    <p class="sub-title">Find the right course for you</p>
+                </div>
+            </div>
+        </div>  
+        <div class="row">
+            <div class="col-12">
+                <nav>
+                    <div class="nav nav-tabs mb-0 justify-content-center" id="nav-tab" role="tablist">
+                      <button class="nav-link active" id="spoken-english-tab" data-bs-toggle="tab" data-bs-target="#spoken-english" type="button" role="tab" aria-controls="spoken-english" aria-selected="true">Spoken English</button>
+                      <button class="nav-link" id="gd-classes-tab" data-bs-toggle="tab" data-bs-target="#gd-classes" type="button" role="tab" aria-controls="gd-classes" aria-selected="false">Gd Classes</button>
+                      <button class="nav-link" id="pd-tab" data-bs-toggle="tab" data-bs-target="#pd" type="button" role="tab" aria-controls="pd" aria-selected="false">Personality Development</button>
+                    </div>
+                  </nav>
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="spoken-english" role="tabpanel" aria-labelledby="spoken-english-tab">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="courses-item">
+                                    <a href="#" class="link">
+                                        <div class="course-item-inner">
+                                            <div class="img-box">
+                                                <img src="{% static 'website/images/courses/web-development/1.jpg' %}" alt="course-img">
+                                            </div>
+                                            <h3 class="title">Starting</h3>
+                                            <div class="instructor">
+                                                <img src="{% static 'website/images/instructor/1.png' %}" alt="instructor">
+                                                <span class="instructor-name">Vishal Vishwakarma</span>
+                                            </div>
+                                            <div class="rating">
+                                                <span class="average-rating">(4.5)</span>
+                                                <span class="average-star">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </span>
+                                                <span class="reviews">230</span>
+                                            </div>
+                                            <div class="price">$49</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- ========== End course item ========== -->
+                            <div class="col-md-6 col-lg-3">
+                                <div class="courses-item">
+                                    <a href="#" class="link">
+                                        <div class="course-item-inner">
+                                            <div class="img-box">
+                                                <img src="{% static 'website/images/courses/web-development/1.jpg' %}" alt="course-img">
+                                            </div>
+                                            <h3 class="title">Knowledge</h3>
+                                            <div class="instructor">
+                                                <img src="{% static 'website/images/instructor/1.png' %}" alt="instructor">
+                                                <span class="instructor-name">Vishal Vishwakarma</span>
+                                            </div>
+                                            <div class="rating">
+                                                <span class="average-rating">(4.5)</span>
+                                                <span class="average-star">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </span>
+                                                <span class="reviews">230</span>
+                                            </div>
+                                            <div class="price">$49</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="courses-item">
+                                    <a href="#" class="link">
+                                        <div class="course-item-inner">
+                                            <div class="img-box">
+                                                <img src="{% static 'website/images/courses/web-development/1.jpg' %}" alt="course-img">
+                                            </div>
+                                            <h3 class="title">Achievement</h3>
+                                            <div class="instructor">
+                                                <img src="{% static 'website/images/instructor/1.png' %}" alt="instructor">
+                                                <span class="instructor-name">Vishal Vishwakarma</span>
+                                            </div>
+                                            <div class="rating">
+                                                <span class="average-rating">(4.5)</span>
+                                                <span class="average-star">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </span>
+                                                <span class="reviews">230</span>
+                                            </div>
+                                            <div class="price">$49</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="gd-classes" role="tabpanel" aria-labelledby="gd-classes-tab">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="courses-item">
+                                    <a href="{% url 'website:course-detail' %}" class="link">
+                                        <div class="course-item-inner">
+                                            <div class="img-box">
+                                                <img src="{% static 'website/images/courses/web-development/1.jpg' %}" alt="course-img">
+                                            </div>
+                                            <h3 class="title">Group Discussion</h3>
+                                            <div class="instructor">
+                                                <img src="{% static 'website/images/instructor/1.png' %}" alt="instructor">
+                                                <span class="instructor-name">Vishal Vishwakarma</span>
+                                            </div>
+                                            <div class="rating">
+                                                <span class="average-rating">(4.5)</span>
+                                                <span class="average-star">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </span>
+                                                <span class="reviews">230</span>
+                                            </div>
+                                            <div class="price">$49</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- ========== End course item ========== -->
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pd" role="tabpanel" aria-labelledby="pd-tab">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="courses-item">
+                                    <a href="#" class="link">
+                                        <div class="course-item-inner">
+                                            <div class="img-box">
+                                                <img src="{% static 'website/images/courses/web-development/1.jpg' %}" alt="course-img">
+                                            </div>
+                                            <h3 class="title">Personality Development</h3>
+                                            <div class="instructor">
+                                                <img src="{% static 'website/images/instructor/1.png' %}" alt="instructor">
+                                                <span class="instructor-name">Vishal Vishwakarma</span>
+                                            </div>
+                                            <div class="rating">
+                                                <span class="average-rating">(4.5)</span>
+                                                <span class="average-star">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </span>
+                                                <span class="reviews">230</span>
+                                            </div>
+                                            <div class="price">$49</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- ========== End course item ========== -->
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        
+</section>
+<!-- ========== End courses-section ========== -->
+
+
+{% endblock page_content %}

@@ -1,0 +1,160 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block custom_css %}
+
+{% endblock custom_css %}
+
+{% block page_title %}About Us{% endblock page_title %}
+
+
+{% block page_content %}
+<!-- ========== Start why-skae ========== -->
+<section class="why-skae section-padding">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title">
+                    <h2>Why Choose <span>SKAE ?</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6 why-choose-skae-carousel">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="{% static 'website/images/why_skae/pic1.png' %}" class="d-block w-100" alt="pic1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{% static 'website/images/why_skae/pic2.png' %}" class="d-block w-100" alt="pic2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{% static 'website/images/why_skae/pic3.png' %}" class="d-block w-100" alt="pic3">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+            <div class="col-md-6 why-choose-skae-txt">
+                <p>
+                  Skae is a complete Eco system for communication training + Practice Platform + Jobs. It's both the offline and online platform which provides spoken English training with personality development workshop with performance report to provide suitable jobs to the candidates. <br>
+                    Anyone from any part of the world doesn’t take classes to speak their native
+                    language. This is only because since childhood they have been listening to
+                    that language day and night, connecting all the actions with that language.
+                    This is the reason why without any tireless effort, they learn to speak and
+                    understand their native and regional languages.
+                    Understanding this concept of learning language SKAE has adopted the same
+                    methodology to make spoken English easy, even if English is not our native
+                    language. You only need to keep listening attentively in this LIVE G.D. classes
+                    and try to speak gradually. You will start feeling a difference in your
+                    confidence. This is the first APP in India where a moderator will be present
+                    with you at all times, who will also encourage you, give you a chance to speak
+                    up, and rectify your mistakes. We promise that you too will come out of your
+                    fear and reluctance to speak English.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ========== End why-skae ========== -->
+
+<!-- ========== Start Director-message ========== -->
+<section class="director-message section-padding">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title">
+                    <h2>Director <span>Message</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-6 director-message-text">
+                <p>
+                    Dear All, <br>
+The outset, I thank you for your interest in getting associated with Skae – One of the leading spoken English centers in Eastern U.P. Our power of discourse is one of the most incisive ways to express our personality. No one has the ability to ascertain what we contemplate/muse/dwell upon, our sentiments,wit and diligence by merely looking our face. It can only be understood the way we communicate or the way we express our ideas in front of them. The one who secures 80-90% can be unsuccessful if he fails to deliver his ideas or views effectively while facing an interview. On the contrary, the one who secures 50-60% can be triumphant if he knows how to expound his ideas in an impressive manner.
+Whoever has become a great leader or motivator in the millennia, it is due to their communication skills, be it in the field of business or in the area of politics. We firmly believe that empowering communication plays the major role in overall Personality Development.
+                </p>
+            </div>
+            <div class="col-md-6 director-image">
+                <img src="{% static 'website/images/team_&_trainer/director.svg' %}" alt="director">
+                <h4>Mr. Puneet Agrawal</h4>
+                <span>Director & Founder</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== End Director-message ========== -->
+
+
+<!-- ========== Start Our Team ========== -->
+<!--- Team section Start-->
+<section class="team section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title">
+            <h2>team <span>members</span></h2>
+          </div>
+        </div>
+      </div>
+        <div class="row team-box">
+          <div class="team-carousel">
+            <div class="team-item col-4">
+              <img src="{% static 'website/images/team_&_trainer/Aanand Sir.jpeg' %}" alt="anand">
+              <h3>Aanand Srivastav</h3>
+              <span>Senior Trainer</span>
+            </div>
+            <div class="team-item col-4">
+              <img src="{% static 'website/images/team_&_trainer/Shreyansh_bhaiya.png' %}" alt="">
+              <h3>Shreyansh Jain</h3>
+              <span>Head Business Development</span>
+            </div>
+            <div class="team-item col-4">
+              <img src="{% static 'website/images/team_&_trainer/Sakshi_Mam.jpeg' %}" alt="">
+              <h3>Sakshi Tripathi</h3>
+              <span>Academic Counsellor</span>
+            </div> 
+           {% comment %} <div class="team-item col-4">
+              <img src="{% static 'website/images/team_&_trainer/Avantika_Mam.jpeg' %}" alt="">
+              <h3>Avantika Mishra</h3>
+              <span>Head Operations</span>
+            </div> {% endcomment %}
+            <div class="team-item col-4">
+              <img src="{% static 'website/images/team_&_trainer/Anupama_Mam.jpeg' %}" alt="">
+              <h3>Anupama Tiwari</h3>
+              <span>Academic Counsellor</span>
+            </div> 
+            <div class="team-item col-4">
+              <img src="{% static 'website/images/team_&_trainer/Prakriti Maam.jpeg' %}" alt="">
+              <h3>Prakriti Tripathi</h3>
+              <span>Trainer</span>
+            </div> 
+            <div class="team-item col-4">
+              <img src="{% static 'website/images/team_&_trainer/Disha_Maam.jpeg' %}" alt="">
+              <h3>Disha Vij</h3>
+              <span>Trainer</span>
+            </div> 
+            
+          </div>
+        </div>
+    </div>
+   
+  </section>
+<!--- Team section End-->
+
+
+
+{% endblock page_content %}
+
+{% block cutom_js %}
+{% endblock cutom_js %}

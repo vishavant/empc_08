@@ -1,0 +1,98 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block page_content %}
+
+<!-- ========== Start Breadcumb ========== -->
+<div class="breadcrumb-nav">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item"><a href="/">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Offline Courses</li>
+            </ol>
+          </nav>
+    </div>
+</div>
+<!-- ========== End Breadcumb ========== -->
+
+<!-- ========== Start courses-section ========== -->
+<!--Explore Courses start-->
+<section class="explore-course section-padding" data-scroll-index="2">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title">
+            <h2>Explore our <span>offline courses</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="course-carousel">
+          <div class="course-item">
+            <img src="{% static 'website/images/courses/img069.webp' %}" alt="">
+            <h3 class="course-item-title text-center mt-5">Start 50+</h3>
+            <p> This is course is for beginners who lack even basic knowledge of grammar and vacabularies.</p>
+  <div class="row justify-content-center mb-2">
+    <div class="col-md-3">
+        <i class="fas fa-calendar"> 1 Month</i>
+    </div>
+    <div class="col-md-3">
+        <i class="fas fa-clock"> 50 hours</i>
+        
+    </div>
+    <div class="col-md-3">
+        <i class="fas fa-book"> 20 Modules</i>
+        
+    </div>
+  </div>
+    <a href="{% url 'website:starting-course' %}" class="btn btn-2">View Course</a>
+          </div>
+          <div class="course-item">
+            <img src="{% static 'website/images/courses/skae_cover2_for_web.webp' %}" alt="">
+            <h3 class="course-item-title text-center mt-5">Know 50+</h3>
+            <p> This course is to learn the concept of Sentence framing, vocabulary and pronunciation with confidence.</p>
+            <div class="row justify-content-center mb-2">
+                <div class="col-md-3">
+                    <i class="fas fa-calendar">   1 Month</i>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-clock"> 100 hours</i>
+                    
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-book"> 40 Modules</i>
+                    
+                </div>
+              </div>  
+            <a href="{% url 'website:know-course' %}" class="btn btn-2">View Course</a>
+          </div>
+          <div class="course-item">
+            <img src="{% static 'website/images/courses/skae_cover_achievement.png' %}" style="" alt="">
+            <h3 class="course-item-title text-center mt-5">Achieve 50+</h3>
+            
+            <p> This course is to provide opportunity to practise and enhance fluency in the presence of a Trainer.</p>
+  <div class="row justify-content-center mb-2">
+    <div class="col-md-3">
+        <i class="fas fa-calendar"> 1 Month</i>
+    </div>
+    <div class="col-md-3">
+        <i class="fas fa-clock"> 50 hours</i>
+        
+    </div>
+    <div class="col-md-3">
+        <i class="fas fa-book"> 20 Modules</i>
+        
+    </div>
+  </div>  
+  <a href="{% url 'website:achieve-course' %}" class="btn btn-2">View Course</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Explore Courses end-->
+<!-- ========== End courses-section ========== -->
+
+
+{% endblock page_content %}

@@ -1,0 +1,84 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+
+{% block page_title %}course-detail{% endblock page_title %}
+
+
+
+
+
+
+{% block page_content %}
+<!-- ========== Start Breadcumb ========== -->
+<div class="breadcrumb-nav">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'website:offline-courses' %}">Offline Courses</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Know 50+</li>
+            </ol>
+          </nav>
+    </div>
+</div>
+<!-- ========== End Breadcumb ========== -->
+
+
+
+<!-- ========== Start course-detail ========== -->
+<section class="course-details section-padding">
+   <div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <!-- ========== Start course-header ========== -->
+            <div class="course-header box">
+                <h2 class="text-capitalize">Know 50+</h2>
+                <p>This course provides you with the base of Spoken English that is the
+                    grammar. It helps you to know about the basics of grammar needed for
+                    spoken English.</p>
+                
+                <h2 class="text-capitalize">Objective</h2>
+                <p>To provide the basic of the language with simple examples to the student who has difficulties
+
+                    understanding the language.</p>
+
+                <div class="course-chapter-list">
+                    <h2>Content</h2>
+                    <ul>
+                        <li>Word As Names</li>
+                        <li>The Articles</li>
+                        <li>Be Form</li>
+                        <li>Wh-Questions</li>
+                        <li>Position Words</li>
+                        <li>Yes/No Questions</li>
+                        <li>There/It</li>
+                        <li>Subject and Verb Agreement</li>
+                        <li>Have/Has/Had</li>
+                        <li>Is/Am/Are+ing</li>
+                        <li>and more......</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ========== End course-header ========== -->
+        </div>
+        <div class="col-lg-4">
+            <!-- ========== Start course-sidebar ========== -->
+            <div class="course-sidebar box">
+                 <div class="course-tile">
+                    <img src="{% static 'website/images/courses/skae_cover2_for_web.webp' %}" alt="">
+                    
+                 </div> 
+                 <div class="course-enquire-btn p-2">
+                    <a href="{% url 'website:contact-us' %}" class="btn btn-2">Enquire Now</a>  
+                 </div>
+            </div>
+                <!-- ========== End course-sidebar ========== -->
+        </div>
+    </div>
+   </div>
+</section>
+<!-- ========== End course-detail ========== -->
+{% endblock page_content %}
+

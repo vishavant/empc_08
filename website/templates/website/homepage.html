@@ -1,0 +1,382 @@
+{% extends 'website/base.html' %}
+{% load static %}
+{% block page_title %}Homepage{% endblock page_title %}
+
+{% block custom_css %}
+
+{% endblock custom_css %}
+
+{% block page_content %}
+
+<section class="banner-section d-flex align-items-center position-relative">
+    <!------------Bubble Section Start------------>
+    <div class="bubble-animation">
+        <div class="bubble-animation-item"></div>
+        <div class="bubble-animation-item"></div>
+        <div class="bubble-animation-item"></div>
+        <div class="bubble-animation-item"></div>
+        <div class="bubble-animation-item"></div>
+        <div class="bubble-animation-item"></div>
+        <div class="bubble-animation-item"></div>
+        <div class="bubble-animation-item"></div>
+        <div class="bubble-animation-item"></div>
+    </div>
+    <!------------Bubble Section End------------>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 banner-text">
+                
+                <h1 class="mb-3 text-capitalize">Communication Skill is the key to Success</h1>
+                <p class="mb-4">SKAE offers programs catering to various level of learners. The experience starts with the need to analyze check the requirement and to provide customized courses. In our physical classes we also use technology to strengthen the learning process and to assure the effeciency and fluency of each learner. SKAE also focuses on personality development with public speaking and interview technique skills.
+                </p>
+                <a href="{% url 'website:contact-us' %}" class="btn btn-theme">Enquire Now</a>
+                <div class="row hero-feature">
+                    <div class="col-md-3 hero-feature-item-1">
+                        <h4>5+</h4>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="col-md-3 hero-feature-item-2">
+                        <h4>5000+</h4>
+                        <p>Certified Students</p>
+                    </div>
+                    <div class="col-md-3 hero-feature-item-3">
+                        <h4>100000+</h4>
+                        <p>Learning Hours</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="banner-img">
+                    <div class="circular-img">
+                        <div class="circular-img-inner"></div>
+                        <img src="{% static 'website/images/hero_img.svg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ========== Start Fun Facts ========== -->
+<section class="fun-facts-section">
+    <div class="container">
+        <div class="box py-2">
+            <p class="text-center">Our Trainee's working at</p>
+            <div class="row fun-facts text-center align-items-center">
+                
+                <div class="col-md-6 col-lg-1">
+                    <div class="fun-facts-item">
+                        <img src="{% static 'website/images/company_logos/Group 162664.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-1">
+                    <div class="fun-facts-item">
+                        <img src="{% static 'website/images/company_logos/Group 162678.png' %}" alt=""> 
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-1">
+                    <div class="fun-facts-item">
+                        <img src="{% static 'website/images/company_logos/Group 162683.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-1">
+                    <div class="fun-facts-item">
+                        <img src="{% static 'website/images/company_logos/Kia-logo.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-1">
+                    <div class="fun-facts-item">
+                        <img src="{% static 'website/images/company_logos/800px-Jaipuria_Institute_of_management_logo.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-1">
+                    <div class="fun-facts-item">
+                        <img src="{% static 'website/images/company_logos/Group 162696.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-1">
+                    <div class="fun-facts-item">
+                        <img src="{% static 'website/images/company_logos/indigo-logo.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-1">
+                    <div class="fun-facts-item">
+                        <img src="{% static 'website/images/company_logos/sbi-logo-state-bank-india-group-vector-eps-0.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ========== End Fun Facts ========== -->
+<br> <br>
+
+
+<section class="learning-skae section-padding">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="section-title">
+                <h2>Learning with <span>SKAE</span></h2>
+              </div>
+            </div>
+          </div>
+        <div class="row align-items-center">
+            <div class="col-md-6 learning-skae-img">
+                <img src="{% static 'website/images/learning_with_skae/pic4.svg' %}" alt="">
+            </div>
+            <div class="col-md-6 learning-skae-txt">
+                <p>
+                    Skae is pioneer in teaching spoken English, has its HO at Gorakhpur
+                    started on 13th April 2018. Skae, formerly known as Shri Krishna
+                    Academy for English. The training at is always a buzz with activity with more than
+                    
+                    400 students at home center.
+                    
+                    Skae offers programs catering to various levels of learners. The
+                    Learning experience starts with learners analysis. Skae offers the
+                    best tutor pack to all categories of learners who have no access to
+                    good training centre. Skae’s courses are customized to every
+                    category of learners. Its counsellors Interact with students who
+                    
+                    walk into SKAE, conduct polite and friendly assessments before
+                    
+                    providing them appropriate courses.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== Start Courses Section ========== -->
+<!--Explore Courses start-->
+<section class="explore-course section-padding" data-scroll-index="2">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title">
+            <h2>Explore our <span>offline courses</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="course-carousel">
+          <div class="course-item">
+            <img src="{% static 'website/images/courses/img069.webp' %}" alt="">
+            <h3 class="course-item-title text-center mt-5">Start 50+</h3>
+            <p> This is course is for beginners who lack even basic knowledge of grammar and vacabularies.</p>
+  <div class="row justify-content-center mb-2">
+    <div class="col-md-3">
+        <i class="fas fa-calendar"> 1 Month</i>
+    </div>
+    <div class="col-md-3">
+        <i class="fas fa-clock"> 50 hours</i>
+        
+    </div>
+    <div class="col-md-3">
+        <i class="fas fa-book"> 20 Modules</i>
+        
+    </div>
+  </div>
+    <a href="{% url 'website:starting-course' %}" class="btn btn-2">View Course</a>
+          </div>
+          <div class="course-item">
+            <img src="{% static 'website/images/courses/skae_cover2_for_web.webp' %}" alt="">
+            <h3 class="course-item-title text-center mt-5">Know 50+</h3>
+            <p> This course is to learn the concept of Sentence framing, vocabulary and pronunciation with confidence.</p>
+            <div class="row justify-content-center mb-2">
+                <div class="col-md-3">
+                    <i class="fas fa-calendar">   1 Month</i>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-clock"> 50 hours</i>
+                    
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-book"> 40 Modules</i>
+                    
+                </div>
+              </div>  
+            <a href="{% url 'website:know-course' %}" class="btn btn-2">View Course</a>
+          </div>
+          <div class="course-item">
+            <img src="{% static 'website/images/courses/skae_cover_achievement.png' %}" style="" alt="">
+            <h3 class="course-item-title text-center mt-5">Achieve 50+</h3>
+            
+            <p> This course is to provide opportunity to practise and enhance fluency in the presence of a Trainer.</p>
+  <div class="row justify-content-center mb-2">
+    <div class="col-md-3">
+        <i class="fas fa-calendar"> 1 Month</i>
+    </div>
+    <div class="col-md-3">
+        <i class="fas fa-clock"> 50 hours</i>
+        
+    </div>
+    <div class="col-md-3">
+        <i class="fas fa-book"> 20 Modules</i>
+        
+    </div>
+  </div>  
+  <a href="{% url 'website:achieve-course' %}" class="btn btn-2">View Course</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Explore Courses end-->
+
+<!-- ========== End Courses Section ========== -->
+
+
+<!-- ========== Start Testimonial ========== -->
+<section class="testimonials-section section-padding position-relative">
+    <div class="decoration-circles">
+        <div class="decoration-circles-item"></div>
+        <div class="decoration-circles-item"></div>
+        <div class="decoration-circles-item"></div>
+        <div class="decoration-circles-item"></div>
+    </div>
+    <div class="decoration-imgs">
+        <img src="{% static 'website/images/testimonial/boy_avatar1.png' %}" alt="decoration-imgs" class="decorations-imgs-item">
+        <img src="{% static 'website/images/testimonial/boy_avatar2.png' %}" alt="decoration-imgs" class="decorations-imgs-item">
+        <img src="{% static 'website/images/testimonial/girl_avatart.png' %}" alt="decoration-imgs" class="decorations-imgs-item">
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="section-title">
+                <h2>What our <span>Students</span> say</h2>
+              </div>
+            </div>
+          </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="img-box rounded-circle position-relative">
+                    <img src="{% static 'website/images/testimonial/boy_avatar1.png' %}" class="w-100 js-testimonial-img rounded-circle" alt="">
+                </div>
+                <div id="carouselOne" class="carousel slide text-center" data-bs-ride="carousel">
+                    <div class="carousel-inner mb-4">
+                      <div class="carousel-item active" data-js-testimonial-img="{% static 'website/images/testimonial/boy_avatar1.png' %}">
+                        <div class="testimonials-item">
+                            <p>
+                                The overall goal of the course is excellent and the basic structure of the
+course is excellent.
+                            </p>
+                            <h3>Nilesh Kumar Singh</h3>
+                            <p class="text-2">BATCH NO. ES-278</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-js-testimonial-img="{% static 'website/images/testimonial/girl_avatart.png' %}">
+                        <div class="testimonials-item">
+                            <p>
+                                SKAE is awesome!!! Because of SKAE, I gained confidence, got
+                                motivated to speak English
+                            </p>
+                            <h3>Akansha Sharma</h3>
+                            <p class="text-2">BATCH NO. A-298</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-js-testimonial-img="{% static 'website/images/testimonial/boy_avatar2.png' %}">
+                        <div class="testimonials-item">
+                            <p>
+                                Thank you for teaching me so many things. I will miss SKAE. You are the best
+                            </p>
+                            <h3>Ankit Dubey</h3>
+                            <p class="text-2">Batch No. A312</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                </div>
+                        </div>
+                      </div>
+                      
+                      <div class="carousel-item" data-js-testimonial-img="{% static 'website/images/testimonial/girl_avatart.png' %}">
+                        <div class="testimonials-item">
+                            <p>
+                                Skae is the best institute for English spoken course in Gorakhpur. They have very experienced trainers. They are too friendly and co-operative. I got confidence and removed my hesitation, now I can speak English fluently.
+                            </p>
+                            <h3>Shazia Kahtoon</h3>
+                            <p class="text-2">BATCH NO. A-398</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselOne" data-bs-slide="prev">
+                      <i class="fas fa-arrow-left"></i>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselOne" data-bs-slide="next">
+                        <i class="fas fa-arrow-right"></i>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ========== End Testimonial ========== -->
+
+
+<!-- ========== Start Become an Instructor ========== -->
+<section class="bai-section section-padding">
+   <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-xl-10">
+            <div class="box">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="circular-img">
+                            <div class="circular-img-inner">
+                                <div class="circular-img-circle"></div>
+                                <img src="{% static 'website/images/bai_img.svg' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="section-title">
+                            <h2 class="title">
+                                Join us as a trainer
+                            </h2>
+                            <p class="sub-title">
+                                Join us as a trainer
+                            </p>
+                        </div>
+                        <a href="{% url 'website:join-us' %}" class="btn btn-theme">Join Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</section>
+<!-- ========== End Become an Instructor ========== -->
+{% endblock page_content %}
+
+
+{% block custom_js %}
+
+{% endblock custom_js %}

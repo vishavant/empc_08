@@ -1,0 +1,83 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+
+{% block page_title %}course-detail{% endblock page_title %}
+
+{% block page_content %}
+<!-- ========== Start Breadcumb ========== -->
+<div class="breadcrumb-nav">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'website:offline-courses' %}">Offline Courses</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Starting</li>
+            </ol>
+          </nav>
+    </div>
+</div>
+<!-- ========== End Breadcumb ========== -->
+
+
+
+
+
+<!-- ========== Start course-detail ========== -->
+<section class="course-details section-padding">
+   <div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <!-- ========== Start course-header ========== -->
+            <div class="course-header box">
+                <h2 class="text-capitalize">Starting</h2>
+                <p>This is a beginners course for those aspirants who have just a bit of
+                    information about Spoken English and those who are ready to accept the
+                    challenge to learn it form the scratch.</p>
+
+                <h2>Objective</h2>
+                <p>To provide the basic of the language with simple examples to the student who has difficulties
+
+                    understanding the language.</p>
+                
+                
+
+                <div class="course-chapter-list">
+                    <h2>Chapter Content</h2>
+                    <ul>
+                        <b><li>Name of numbers, Days &amp; Months.</li>
+                        <li>Time and Names of Things Around Us</li>
+                        <li>Directions</li>
+                        <li>Day to Day Things</li>
+                        <li>Pronoun</li>
+                        <li>Word to Describe</li>
+                        <li>Adverbs</li>
+                        <li>Routine Works</li>
+                        <li>and more...</li>
+
+                        </b>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ========== End course-header ========== -->
+        </div>
+        <div class="col-lg-4">
+            <!-- ========== Start course-sidebar ========== -->
+            <div class="course-sidebar box">
+                 <div class="course-tile">
+                    <img src="{% static 'website/images/courses/img069.webp' %}" alt="">
+                    
+                 </div> 
+                 <div class="course-enquire-btn p-2">
+                    <a href="{% url 'website:contact-us' %}" class="btn btn-2">Enquire Now</a>  
+                 </div>
+            </div>
+                <!-- ========== End course-sidebar ========== -->
+        </div>
+    </div>
+   </div>
+</section>
+<!-- ========== End course-detail ========== -->
+{% endblock page_content %}
+

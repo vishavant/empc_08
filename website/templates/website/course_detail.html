@@ -1,0 +1,57 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+
+{% block page_title %}course-detail{% endblock page_title %}
+
+{% block page_content %}
+<!-- ========== Start course-detail ========== -->
+<section class="course-details section-padding">
+   <div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <!-- ========== Start course-header ========== -->
+            <div class="course-header box">
+                <h2 class="text-capitalize">Knowledge</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium quisquam voluptatum facere at totam quasi, explicabo distinctio eius dolor rem eaque laudantium laborum voluptate molestiae in doloremque cupiditate, pariatur labore?</p>
+                
+                <h2 class="text-capitalize">What you will learn</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam assumenda dolorem at asperiores repellendus exercitationem eius quam fugit minima enim illum odio molestias, pariatur perspiciatis quas ad, aperiam quisquam quaerat.</p>
+
+                <div class="course-chapter-list">
+                    <h2>Content</h2>
+                    <ul>
+                        <li>Word As Names</li>
+                        <li>Word As Names</li>
+                        <li>Word As Names</li>
+                        <li>Word As Names</li>
+                        <li>Word As Names</li>
+                        <li>Word As Names</li>
+                        <li>Word As Names</li>
+                        <li>Word As Names</li>
+                        <li>Word As Names</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ========== End course-header ========== -->
+        </div>
+        <div class="col-lg-4">
+            <!-- ========== Start course-sidebar ========== -->
+            <div class="course-sidebar box">
+                 <div class="course-tile">
+                    <img src="{% static 'website/images/courses/Knowledge Practice Book_for_web.webp' %}" alt="">
+                    
+                 </div> 
+                 <div class="course-enquire-btn p-2">
+                    <a href="{% url 'website:starting-course' %}" class="btn btn-2">Enquire Now</a>  
+                 </div>
+            </div>
+                <!-- ========== End course-sidebar ========== -->
+        </div>
+    </div>
+   </div>
+</section>
+<!-- ========== End course-detail ========== -->
+{% endblock page_content %}
+

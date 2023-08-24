@@ -1,0 +1,121 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>SKAE {% block page_title %}{% endblock page_title %}</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="{% static 'website/css/owl.carousel.min.css' %}">
+  
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="{% static 'website/css/font-awesome.css' %}">
+  <!-- Bootstrap CSS v5.2.0 -->
+  <link rel="stylesheet" href="{% static 'website/css/bootstrap.min.css' %}">
+  
+  <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{% static 'website/css/colors/color-1.css' %}">
+  <link rel="stylesheet" class="js-glass-style" href="{% static 'website/css/glass.css' %}">
+  <link rel="stylesheet" href="{% static 'website/css/base.css' %}">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y779EGP311"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y779EGP311');
+</script>
+
+  {% block custom_css %}
+  
+  {% endblock custom_css %}
+
+</head>
+
+<body>
+
+    {% include "website/navbar.html" %}
+    <br>
+    <div class="main-wrapper">
+
+        {% block page_content %}
+    
+    {% endblock page_content %}
+    </div>
+    
+
+  <footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="footer-item">
+                        <img src="{% static 'website/images/main_logo.svg' %}" class="footer-logo" alt="footer-logo">
+                    <p class="footer-text mt-4">
+                        Skae is pioneer in teaching spoken English, has its HO at Gorakhpur started on 13th April 2018.
+Skae, formerly known as Shri Krishna Academy for English
+                    </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="footer-item">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="{% url 'website:about-us' %}">About Us</a></li>
+                            <li><a href="/">Courses</a></li>
+                            <li><a href="/">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="footer-item">
+                        <h3>Get in touch</h3>
+                        <ul>
+                            <li><a href="https://www.facebook.com/SKAEANS"target="_blank"><i class="fab fa-facebook-f social-icon"></i> Facebook</a></li>
+                            <li><a href="https://wa.me/919795949900?text=Hello%20there!!!%0AHow%20may%20I%20help%20you%3F" target="_blank"><i class="fab fa-whatsapp social-icon"></i> Whatsapp</a></li>
+                            <li><a href="https://www.instagram.com/skaeindia/" target="_blank"><i class="fab fa-instagram social-icon"></i> Instagram</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCNQtY7KkGilCOXYwGhOg7tg" target="_blank"><i class="fab fa-youtube social-icon"></i> Youtube</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="footer-item">
+                        <h3>learning</h3>
+                        <ul>
+                            <li><a href="https://play.google.com/store/apps/details?id=com.edmingle.skae" target="_blank">Get the app</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p class="m-0 py-4 text-center">Copyright &copy; 2022 SKAE</p>
+        </div>
+    </div>
+  </footer>
+  
+  {% block custom_js %}
+  
+  {% endblock custom_js %}
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="{% static 'website/js/website.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+  </script>
+
+  <script src="{% static 'website/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'website/js/owl.carousel.min.js' %}"></script>
+</body>
+
+</html>

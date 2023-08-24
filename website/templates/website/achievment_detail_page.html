@@ -1,0 +1,79 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+
+{% block page_title %}course-detail{% endblock page_title %}
+
+{% block page_content %}
+<!-- ========== Start Breadcumb ========== -->
+<div class="breadcrumb-nav">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'website:offline-courses' %}">Offline Courses</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Achievement</li>
+            </ol>
+          </nav>
+    </div>
+</div>
+<!-- ========== End Breadcumb ========== -->
+
+
+
+<!-- ========== Start course-detail ========== -->
+<section class="course-details section-padding">
+   <div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <!-- ========== Start course-header ========== -->
+            <div class="course-header box">
+                <h2 class="text-capitalize">Achievement</h2>
+                <p>This course provides you the chance to use the grammar that you have learnt.
+                    It gives you the platform to speak out your thoughts..</p>
+                
+                    <h2 class="text-capitalize">Objective</h2>
+                <p>To provide the atmosphere where the student can speak with confidence and mistakes are been
+
+                    rectified by the trainer carefully.</p>
+                
+                
+
+                <div class="course-chapter-list">
+                    <h2>Chapter Content</h2>
+                    <ul>
+                        <li>Hobbies, Interest and personalities</li>
+                        <li>Places and work</li>
+                        <li>Action at home</li>
+                        <li>Likes and Dislikes</li>
+                        <li>Directions and Instruction</li>
+                        <li>Social Courtesy</li>
+                        <li>The Tenses</li>
+                        <li>Mock interview</li>
+                        <li>Opinion, Request and permission</li>
+                        <li>and many ....</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ========== End course-header ========== -->
+        </div>
+        <div class="col-lg-4">
+            <!-- ========== Start course-sidebar ========== -->
+            <div class="course-sidebar box">
+                 <div class="course-tile">
+                    <img src="{% static 'website/images/courses/skae_cover_achievement.png' %}" alt="">
+                    
+                 </div> 
+                 <div class="course-enquire-btn p-2">
+                    <a href="{% url 'website:contact-us' %}" class="btn btn-2">Enquire Now</a>  
+                 </div>
+            </div>
+                <!-- ========== End course-sidebar ========== -->
+        </div>
+    </div>
+   </div>
+</section>
+<!-- ========== End course-detail ========== -->
+{% endblock page_content %}
+
